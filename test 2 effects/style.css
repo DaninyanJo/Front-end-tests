@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url(https://c.wallhere.com/photos/bc/92/trees_space_grass_stars_space_art_digital_art-238553.jpg!d);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+
+}
+
+#container span{
+    border: 2px solid black ;
+
+}
+#container span p{
+
+    font-family: 'Mansalva', cursive;
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.5rem;
+    mix-blend-mode: overlay;
+    animation: example 8s linear infinite;
+}
+@keyframes example {
+    0%{
+        transform: scale(.8);
+        transform: rotate(0deg);
+        text-shadow: 0 0 10px rgb(255, 255, 255),0 0 20px rgb(238, 238, 104);   
+        
+    }
+    25%{
+        transform: scale(.85);
+        transform: rotate(1deg); 
+        text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(250, 13, 159)(255, 93, 93);    
+        
+    }
+    50%{
+        transform: scale(.8);
+        transform: rotate(0deg); 
+        text-shadow: 0 0 30px rgb(255, 255, 255), 0 0 20px rgb(38, 40, 211);   
+    }
+    75%{
+        transform: scale(.75);
+        transform: rotate(-1deg);  
+        text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(9, 252, 102);   
+    }
+    100%{
+        transform: scale(.8);
+        transform: rotate(0deg);  
+        text-shadow: 0 0 10px rgb(255, 255, 255),0 0 20px rgb(238, 238, 104);   
+    }
+}
